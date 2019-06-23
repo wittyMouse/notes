@@ -510,8 +510,8 @@ SubType.prototype.sayAge = function() {
 4. <a name="原型式继承">原型式继承</a>
 由道格拉斯·克罗福德提出
 ```javascript
-function() {
-    function F(o) {}
+function object(o) {
+    function F() {}
     F.prototype = o;
     return new F();
 }
