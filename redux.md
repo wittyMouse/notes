@@ -1,20 +1,20 @@
-# Redix
+# Redux
 
-1. 介绍
+> 介绍
 
-## redux 入门
+## Redux 入门
 
-redux 是 Javascript 应用程序的可预测状态容器.
+Redux 是 JavaScript 应用的可预测状态容器.
 
-它帮助你编写行为一致的应用程序，运行在不同的环境（客户端、服务器和原生），并且它是容易测试的。最重要的是，它提供了极好的的开发体验，例如结合时间旅行调试器的动态代码编辑。
+它帮助你编写行为一致的应用程序，运行在不同的环境（客户端、服务器和原生），并且它是容易测试的。最重要的是，它提供了极好的的开发体验，例如结合时间旅行调试器（开发者工具）的动态代码编辑。
 
-你可以把 Redux 和 React 结合使用，或者搭配别的视图库，它非常的小（2kb，包括依赖），但它有庞大的生态系统和可用的插件库。
+你可以将 Redux 结合 React 使用，或者搭配别的视图库，它非常的小（2kB，包括依赖），但它有庞大的生态系统和可用的插件库。
 
 ### 安装
 
 #### Redux Toolkit
 
-Redux Toolkit 是我们官方推荐的写 Redux 逻辑的方法。它包含 Redux 核心并包含了我们认为对构建 Redux 应用必要的软件包和功能。Redux Toolkit 建立在我们建议的最佳实践中，简化了大多数 Redux 任务，避免了常见的错误，使编写 Redux 应用程序更简单。
+Redux Toolkit 是我们官方推荐的编写 Redux 逻辑的方法。它包含 Redux 核心，并包含了我们认为对构建 Redux 应用必要的软件包和功能。Redux Toolkit 建立在我们建议的最佳实践的前提下，简化了大多数 Redux 任务，避免了常见的错误，使编写 Redux 应用程序更简单。
 
 RTK（Redux Toolkit）包括有助于简化许多常见用例的实用程序，例如：建立仓库、创建 reducers 和编写不可变的更新逻辑，甚至立即创建整个状态的切片。
 
@@ -32,7 +32,7 @@ yarn add @reduxjs/toolkit
 
 #### 创建 React Redux 应用
 
-推荐使用 React 和 Redux 启动新应用的方法是使用用于 Create React App 的官方 Redux + JS 模板，它利用Redux Toolkit 和 React Redux 与 React 组件集成。
+推荐使用 React 和 Redux 创建新应用的方法是使用用于 Create React App 的官方 Redux + JS 模板，它利用 Redux Toolkit 和 React Redux 与 React 组件集成。
 
 ```shell
 npx create-react-app my-app --template redux
