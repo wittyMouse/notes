@@ -39,20 +39,22 @@ function serialize(form) {
         }
         break;
 
-      case undefined:
-      case "file":
-      case "submit":
-      case "reset":
-      case "button":
+      case undefined: // 字段集
+      case "file": // 文件输入
+      case "submit": // 提交按钮
+      case "reset": // 重置按钮
+      case "button": // 自定义按钮
         break;
 
-      case "radio":
-      case "checkbox":
+      case "radio": // 单选按钮
+      case "checkbox": // 复选框
         if (!field.checked) {
           break;
         }
+      /* 执行默认操作 */
 
       default:
+        // 不包含没有名字的表单字段
         if (field.name.length) {
           parts.push(
             encodeURIComponent(field.name) +
